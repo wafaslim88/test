@@ -1,0 +1,56 @@
+/* Register.css */
+
+/* Define the nuanced colors */
+:root {
+  --primary-color: #76858b; /* Primary color for the button background */
+  --dark-primary-color: #45a049; /* Darker shade of primary color on hover */
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #b48a8a, #e1e1e1); /* Updated gradient background */
+}
+
+.register form {
+  width: 400px;
+  padding: 20px;
+  background-color: #ece0e0; /* Updated background color for form container */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register h1 {
+  margin-bottom: 20px;
+}
+
+/* Style the button */
+.btn-primary {
+  background-color: var(--primary-color); /* Use primary color for the button background */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 12px 24px; /* Increased padding for a prettier button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Add transition effect on hover */
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-primary-color); /* Darker primary color on hover */
+}
+
+/* Center the button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.button-container button:hover {
+  background-color: #ff4545; /* Darker shade on hover */
+}
