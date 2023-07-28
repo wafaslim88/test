@@ -4,7 +4,8 @@ const connectDB = require("./config/connectDB");
 require('dotenv').config();
 const authRoutes = require("./routes/authRoute");
 const cors = require('cors');
-const categoryRoutes= require("./routes/categoryRoutes.js");
+const categoryRoutes= require("./routes/categoryRoutes");
+const productRoutes = require("./routes/productRoutes");
 
 
 
@@ -19,6 +20,7 @@ app.use(morgan('dev'));
 //routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
+app.use("/api/v1/product", productRoutes);
 //rest api
 app.get('/',(req,res)=>{
     res.send("<h1>welcome to ecommerce app</h1>")

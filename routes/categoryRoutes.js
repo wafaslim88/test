@@ -1,8 +1,10 @@
 const express=require("express");
 // Using require to import isAdmin and requireSignIn from authMiddleware.js
 const { isAdmin, requireSignIn } = require("./../middlewares/authMiddleware.js");
-const {
-    createCategoryController} = require("./../controllers/categoryController.js");
+const {createCategoryController,
+    updateCategoryController,
+    categoryController,
+    singleCategoryController,deleteCategoryCOntroller} = require("./../controllers/categoryController.js");
 
 
 
@@ -22,5 +24,18 @@ router.put(
     "/update-category/:id",
     requireSignIn,
     isAdmin,
-    updateCategoryController
+    updateCategoryController, 
   );
+  //getALl category
+router.get("/get-category", categoryController);
+//single category
+router.get("/single-category/:slug", singleCategoryController);
+
+//delete category
+router.delete(
+    "/delete-category/:id",
+    requireSignIn,
+    isAdmin,
+    deleteCategoryCOntroller
+  );
+  module.exports = router;

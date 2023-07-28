@@ -1,16 +1,20 @@
-/*body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('../public/images/OIP.jpg');
+  background-size: cover; /* Pour redimensionner l'image pour couvrir tout l'arrière-plan */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}*/
+}
 /* Reset CSS */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
 
@@ -20,11 +24,9 @@ code {
   box-sizing: border-box;
 }
 
-/* font-family: 'Poppins', sans-serif; */
-/* font-family: 'Playfair Display', serif; */
 
 /* //navbar css */
-/*.navbar {
+.navbar {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   line-height: 26px;
@@ -42,86 +44,33 @@ code {
   border-bottom: 2px solid black;
 }
 
+
 .navbar-brand {
   font-weight: 700;
   font-family: "roboto", sans-serif;
   letter-spacing: 3px;
-}*/
+}
 
 /* Navbar container */
 .navbar {
-  background-color: #f8f9fa; /* Set your preferred background color */
+  background-color: #37393a; /* Set your preferred background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px; /* Adjust as needed */
 }
 
-/* Brand logo or text */
-.navbar-brand {
-  font-size: 24px;
-  font-weight: 700;
-  color: #333; /* Set your preferred text color */
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
 }
-
-/* Navigation items container */
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  margin-left: 720px;
-}
-
-/* Individual navigation item */
-.nav-item {
-  margin-right: 20px; /* Adjust spacing between items */
-}
-
-/* Navigation item link */
-.nav-link {
-  font-size: 16px;
-  color: #666; /* Set your preferred text color */
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 20px;
-  transition: color 0.3s ease;
-}
-
-/* Add a bottom border to the active link */
-.active {
-  border-bottom: 2px solid #ff5a5f; /* Set your preferred active link color */
-}
-
-/* Apply hover effect to navigation links */
-.nav-link:hover {
-  color: #ff5a5f; /* Set your preferred hover color */
-}
-
-/* Mobile Navigation */
-.navbar-toggler {
+.search-form input {
   border: none;
-  background-color: transparent;
-  cursor: pointer;
+  border-radius: 0;
+  background-color: #cac6c6;
 }
-
-.navbar-toggler-icon {
-  width: 24px;
-  height: 24px;
-}
-
-/* Mobile Nav Collapse */
-.collapse.navbar-collapse {
-  justify-content: flex-end;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-item {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: rgb(255, 255, 255);
 }
 
 /* =============================
@@ -152,10 +101,12 @@ text-align: center;
 .footer a:hover {
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
+
 }
+
 /* =================================
 ======== page not found css ======= */
-/* Add this CSS in a separate stylesheet or use inline styles in your component */
+
 
 .pnf {
   display: flex;
@@ -168,13 +119,13 @@ text-align: center;
 .pnf-title {
   font-size: 100px;
   font-weight: 700;
-  color: #333; /* Change the color as per your design */
+  color: #333;
   margin-bottom: 10px;
 }
 
 .pnf-heading {
   font-weight: normal;
-  color: #666; /* Change the color as per your design */
+  color: #666; 
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -213,6 +164,7 @@ text-align: center;
 
 /* ========================================= */
 /* ========= register page ========= */
+
 .register{
   display: flex;
   align-items: center;
@@ -220,3 +172,37 @@ text-align: center;
   height: 70%;
   flex-direction: column;
 }
+
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.cat-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+/*--------------------------------------*/
+/*filter by price*/
+
+ /* index.css */
+
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.col-md-9 {
+  padding: 20px;
+}
+
+/*------------*/

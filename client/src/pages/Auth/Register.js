@@ -31,8 +31,7 @@ const Register = () => {
           console.log(error)
           toast.error('Something went wrong')
         }
-        /*console.log(name,email,password,adress,phone);
-        toast.success("Register Successfully");*/
+       
     };
     
     return (

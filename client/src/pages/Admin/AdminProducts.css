@@ -1,0 +1,75 @@
+/* AdminProducts.css */
+
+/* Container styles for the admin products page */
+.dashboard {
+    margin-top: 30px;
+  }
+  
+  /* Styles for the product cards */
+  .product-card {
+    width: 18rem;
+    margin: 10px;
+  }
+  
+  .product-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-card .card-body {
+    padding: 10px;
+  }
+  
+  .product-card h5.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p.card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .product-card .btn-edit {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card .btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Load more button styles */
+  .loadmore {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .loadmore svg {
+    margin-left: 5px;
+  }
+  
+  

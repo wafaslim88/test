@@ -1,5 +1,5 @@
-const mongoose = require ("mongoose")
-const schema = mongoose.Schema
+const mongoose = require ("mongoose");
+const schema = mongoose.Schema;
 
 // Define the User schema
 const UserSchema = new schema ({

@@ -1,4 +1,4 @@
-const jwt = require("jsonwebtoken");
+const JWT = require("jsonwebtoken");
 const User = require("../models/User.js");
 require('dotenv').config();
 
@@ -7,7 +7,7 @@ require('dotenv').config();
 exports.requireSignIn = async (req, res, next) => {
   try {
     // Verify the JWT token from the Authorization header
-    const decode = jwt.verify(
+    const decode = JWT.verify(
       req.headers.authorization,
       process.env.JWT_SECRET
     );
@@ -38,7 +38,7 @@ exports.isAdmin = async (req, res, next) => {
   try {
     // Find the user by their ID from the decoded JWT token (set in requireSignIn middleware)
     const user = await User.findById(req.user._id);
-   // console.log("User role:", user.role);
+    
     // Check if the user has admin role (role = 1)
     if (user.role !== 1) {
       // If the user does not have admin access, send a 401 Unauthorized response

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./../components/Layout/Layout";
+import { Form, Button } from "react-bootstrap";
 
 const PageNotFound = () => {
   return (

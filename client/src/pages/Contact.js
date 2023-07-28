@@ -9,17 +9,16 @@ const Contact = () => {
         <img
            src="/images/Contact.jpg"
            alt="Contact"
-           style={{ width:"75%", marginRight: "80px" }}
+           style={{ width:"75%", height:360, marginRight: 80, marginTop:57 }}
         />
         </div>
         <div className="col-md-4">
-          <h1 className="bg-dark p-2 text-white text-center">CONTACT US</h1>
+          <h1 className="bg-dark p-2 text-white text-center" style={{marginRight:15}}>CONTACT US</h1>
           <p className="text-justify mt-2">
-            any query and info about prodduct feel free to call anytime we 24X7
-            vaialible
+          Have Questions or Need Information about Our Products? We're Available 24/7!
           </p>
           <p className="mt-3">
-            <BiMailSend /> : www.help@ecommerceapp.com
+            <BiMailSend /> : www.samsung@gmail.com
           </p>
           <p className="mt-3">
             <BiPhoneCall /> : 012-3456789
